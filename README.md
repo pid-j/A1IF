@@ -1,5 +1,7 @@
 # A1IF image format
 
+<img width="240" height="120" alt="A1IFLogo" src="https://github.com/user-attachments/assets/7074dd99-0b9e-49c8-b1cf-fc1b13fe1d4f" />
+
 ## 1. Introduction
 A1IF, which stands for Abstracted 1-Bit Image Format, is an image format designed to have two colors - black and white. Unlike a raw 1 bit image, it doesn't store one bit at a time; rather, it starts with the black state at the left edge of the screen. Whenever it encounters a white color, it flips and records that for the line. The color then flips and it does the same for a black color, and vice versa. This is why the name has "Abstracted" because it doesn't store the pixels, but instead stores the flips between rows of colors.
 
