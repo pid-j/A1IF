@@ -5,6 +5,8 @@
 ## 1. Introduction
 A1IF, which stands for Abstracted 1-Bit Image Format, is an image format designed to have two colors - black and white. Unlike a raw 1 bit image, it doesn't store one bit at a time; rather, it starts with the black state at the left edge of the screen. Whenever it encounters a white color, it flips and records that for the line. The color then flips and it does the same for a black color, and vice versa. This is why the name has "Abstracted" because it doesn't store the pixels, but instead stores the flips between rows of colors.
 
+I realize now that this is literally just [RLE](https://en.wikipedia.org/wiki/Run-length_encoding) but I thought it was unique at the time.
+
 ## 2. Features
 This sprite has a full scanner and drawer, allowing for easy use. A demo script is provided, and you can use the green flag and then press the space key or click to scan the provided image. To change the image, use the right and left arrow keys. You can also make your own image but it has to be transparent; using a solid background won't work.
 
